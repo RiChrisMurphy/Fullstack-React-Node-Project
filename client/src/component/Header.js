@@ -16,6 +16,11 @@ class Header extends Component {
     );
    default:
     return [
+     <li>
+      <Link to={this.props.auth ? '/surveys' : '/'} className="right">
+       Surveys
+      </Link>
+     </li>,
      <li key={1}>
       <Payments />
      </li>,
